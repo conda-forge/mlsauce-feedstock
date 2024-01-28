@@ -22,7 +22,8 @@ requirements:
     - cython >=0.29.21  
     - numpy
     - pip
-    - python    
+    - python
+    - requests
     - setuptools
     - scipy    
   run:
@@ -34,6 +35,7 @@ requirements:
     - jax     # [unix]
     - jaxlib      # [unix]
     - joblib >=0.14.0
+    - requests
     - six >=1.16.0
     - threadpoolctl >=2.0.0
     - tqdm >=4.48.1
