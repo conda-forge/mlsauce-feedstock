@@ -1,5 +1,5 @@
 {% set name = "mlsauce" %}
-{% set version = "0.18.1" %}
+{% set version = "0.18.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Techtonique/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 83b8dfc2d4af997bac44cd734fb0b832d218b4da29c3c62bfff53472ef9f2308
+  sha256: 27e726bc39bc7a1686577f747ee3e0ded84fad0c3c807333a9623cb9753da6fd
 
 build:
   number: 0
@@ -17,15 +17,16 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-  host:  
-    - cython >=0.29.21  
+  host:
+    - cython >=0.29.21
     - numpy
     - pip
     - python
     - requests
     - setuptools
-    - scipy    
+    - scipy
   run:
     - python
     - scipy >=0.19.0
@@ -46,7 +47,7 @@ test:
     - pip
   commands:
     - pip check
-  imports: 
+  imports:
     - mlsauce
 
 about:
