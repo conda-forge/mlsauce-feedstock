@@ -1,5 +1,5 @@
 {% set name = "mlsauce" %}
-{% set version = "0.18.4" %}
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Techtonique/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f67d01fa4295a6d547f52252b69564d8d356e961c6876c70a7687e24bab5eb1a
+  sha256: 3b46ec9c5adaa648a421a251bd9668fd4ef6aa3ab2f814858e743c2f3808a923
 
 build:
   number: 0
