@@ -17,15 +17,16 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-  host:  
-    - cython >=0.29.21  
+  host:
+    - cython >=0.29.21
     - numpy
     - pip
     - python
     - requests
     - setuptools
-    - scipy    
+    - scipy
   run:
     - python
     - scipy >=0.19.0
@@ -46,7 +47,7 @@ test:
     - pip
   commands:
     - pip check
-  imports: 
+  imports:
     - mlsauce
 
 about:
