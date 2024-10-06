@@ -10,13 +10,14 @@ source:
   sha256: 0b35c7df1d0c9838c621d23da2f425d6f0716f90697d8dd08322c4410057832a
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:  
     - cython >=0.29.21  
@@ -42,7 +43,6 @@ requirements:
     - threadpoolctl >=2.0.0
     - tqdm >=4.48.1
     - nnetsauce
-    - {{ pin_compatible('numpy') }}
 
 test:
   requires:
