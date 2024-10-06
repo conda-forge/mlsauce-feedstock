@@ -1,5 +1,5 @@
 {% set name = "mlsauce" %}
-{% set version = "0.19.1" %}
+{% set version = "0.20.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Techtonique/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 2def3bc5d1eedb82b5a7a1554c60732196733d5bb0f7f93e69faffa5714cefe2
+  sha256: d8a39141de857c4b777e83a47cc9a5fd69dfaa7bd69ec85036b61c9503ef4b08
 
 build:
   number: 0
@@ -25,7 +25,8 @@ requirements:
     - python
     - requests
     - setuptools
-    - scipy    
+    - scipy   
+    - nnetsauce
   run:
     - python
     - scipy >=0.19.0
@@ -39,6 +40,7 @@ requirements:
     - six >=1.16.0
     - threadpoolctl >=2.0.0
     - tqdm >=4.48.1
+    - nnetsauce
     - {{ pin_compatible('numpy') }}
 
 test:
