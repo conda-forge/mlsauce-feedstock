@@ -29,6 +29,7 @@ requirements:
     - nnetsauce
   run:
     - python
+    - cython >=0.29.21  
     - scipy >=0.19.0
     - scikit-learn >=0.18.0
     - matplotlib-base
