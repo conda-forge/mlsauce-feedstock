@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Techtonique/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: eda02a68e801206f1a5ed4291e333546d37f2e2b19bd3b2a261f44a099bbde3e
+  sha256: 29fde72ea4047d6a1bcb3fd807c83e4f86bf9a65d3d37b082229dc61a43cbd40
 
 build:
   number: 1
