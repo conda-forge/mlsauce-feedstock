@@ -41,6 +41,8 @@ requirements:
     - threadpoolctl >=2.0.0
     - tqdm >=4.48.1
     - seaborn
+    - jax
+    - jaxlib
 
 test:
   requires:
