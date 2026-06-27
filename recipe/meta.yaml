@@ -43,7 +43,6 @@ requirements:
     - tqdm >=4.48.1
     - nnetsauce
     - seaborn
-    - GPopt
 
 test:
   requires:
