@@ -43,6 +43,7 @@ requirements:
     - seaborn
     - jax
     - jaxlib
+    - nnetsauce
 
 test:
   requires:
