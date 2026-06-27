@@ -27,7 +27,6 @@ requirements:
     - requests
     - setuptools
     - scipy   
-    - nnetsauce
   run:
     - numpy
     - python
@@ -41,7 +40,6 @@ requirements:
     - six >=1.16.0
     - threadpoolctl >=2.0.0
     - tqdm >=4.48.1
-    - nnetsauce
     - seaborn
 
 test:
